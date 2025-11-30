@@ -1,0 +1,677 @@
+/* Hero text color white */
+#hero-text {
+  color: #fff;
+}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Poppins:wght@600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+
+h2, h3, h4 {
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+}
+
+.wrapper {
+  width: auto;
+  height: auto;
+  background-color: #191c32;
+  color: #ffffff;
+}
+
+header {
+  position: sticky;   /* se queda pegado arriba al hacer scroll */
+  top: 0;
+  z-index: 100;
+  background-color: #191c32;  /* mismo color de fondo */
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  padding: 2em;
+  box-shadow:0 4px 15px rgb(0, 0, 0, 0.4) ;
+}
+
+
+.brand{
+  margin-top: -7px;
+
+}
+
+
+.brand span{
+  color: aqua;
+}
+
+
+.menu{
+  display: flex;
+  gap: 75px;             /* separación limpia entre items */
+  justify-content: center;  /* 👈 centrado perfecto */
+  margin-right: 100px;      /* 👈 mueve el menú hacia la izquierda para alinearlo con la imagen */
+}
+
+
+.menu li{
+  list-style: none;
+}
+
+.menu a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 0;
+  position: relative;
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.07em;   /* separación de letras */
+  text-transform: uppercase;/* opcional: todo mayúscula */
+}
+
+
+/* Línea animada debajo de cada link */
+.menu a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #00eaff, #00c6ff);
+  transition: width 0.25s ease;
+}
+
+/* Cuando pasas el mouse */
+.menu a:hover::after {
+  width: 100%;
+}
+
+
+.menu .active{
+  color: aqua;
+
+}
+
+
+.menu a:hover{
+  background-color: aqua;
+  color: #ffffff;
+  transition: ease-in .5s;
+}
+
+
+.main{
+  width: 100%;
+  max-width: 1200px;         /* ancho máximo del contenido */
+  margin: 0 auto;
+  padding: 60px 8% 80px;     /* 👈 un poco menos de padding lateral para centrar mejor */
+  display: flex;             /* texto + imagen en fila */
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px;                 /* espacio entre texto e imagen */
+}
+
+h1{
+  font-size: 3em;
+
+}
+
+
+span{
+  color: aqua;
+
+
+}
+
+.download-cv { 
+  padding: 12px 32px;
+  background-color: aqua;
+  color: #000000;
+  border: none;
+  border-radius: 25px;
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: 0.3s ease;
+  box-shadow: 0px 4px 20px rgba(0, 255, 255, 0.4);
+
+
+}
+
+.download-cv:hover {
+  background-color: #fff;
+  color: #000000;
+  box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.4);
+  transform: translateY(-2px);
+}
+
+
+.info-content p {
+  max-width: 520px;          /* un poco más compacto para que no sea tan alto */
+  line-height: 1.7;
+  margin-top: 15px;
+  font-size: 1.05rem;
+  color: #000000;
+}
+
+.profile-picture {
+  width: 380px;              /* 👈 ancho consistente (en lugar de auto) */
+  border-radius: 15px;
+  object-fit: cover;
+  box-shadow: 0px 20px 40px rgba(0,0,0,0.45);
+  margin-top: 30px;          /* 👈 baja un poquito la imagen para alinearla mejor con el título */
+}
+
+
+@media (max-width: 992px) {
+  .main {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .info-content p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .profile-picture {
+    width: 300px;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2.4em;
+  }
+
+  .info-content p {
+    font-size: 0.98rem;
+  }
+}
+
+/* ============================
+   ABOUT ME SECTION
+============================ */
+
+.about {
+  padding: 60px 10% 80px;
+  display: flex;
+  gap: 60px;
+  align-items: flex-start;
+  background-color: #15172b;  /* un poco más oscuro para diferenciar del hero */
+}
+
+.about-left,
+.about-right {
+  flex: 1;
+}
+
+.about-left h2 {
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+}
+
+.about-left span {
+  color: aqua;
+}
+
+.about-left p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #fff;
+  margin-bottom: 12px;
+  max-width: 600px;
+}
+
+/* Título lado derecho */
+.about-right h3 {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+  letter-spacing: 0.5px;
+}
+
+
+/* Tarjetas de skills */
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.skill-card {
+  background: #191c32;
+  border-radius: 12px;
+  padding: 18px 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+  border: 1px solid rgba(255,255,255,0.03);
+  transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+}
+
+.skill-card h4 {
+  font-size: 1.05rem;
+  margin-bottom: 8px;
+  color: #00eaff;
+}
+
+.skill-card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #fff;
+}
+
+.skill-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 30px rgba(0,0,0,0.55);
+  border-color: rgba(0, 234, 255, 0.4);
+}
+
+/* Responsive About */
+
+@media (max-width: 992px) {
+  .about {
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 100px;  /* ajusta si cambias la altura del header */
+}
+
+
+
+/* ============================
+   PORTFOLIO SECTION
+============================ */
+
+.portfolio {
+  padding: 60px 10% 80px;
+  background-color: #191c32;   /* mismo fondo del hero */
+}
+
+.portfolio-header {
+  max-width: 650px;
+  margin-bottom: 40px;
+}
+
+.portfolio-header h2 {
+  font-size: 2.4rem;
+  margin-bottom: 12px;
+}
+
+.portfolio-header p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #fff;
+}
+
+/* Grid de proyectos */
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.project-card {
+  background: #15172b;
+  border-radius: 14px;
+  padding: 20px 22px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255,255,255,0.04);
+  transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+}
+
+.project-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #00eaff;
+}
+
+.project-card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #fff;
+  margin-bottom: 14px;
+}
+
+.project-tag {
+  display: inline-block;
+  font-size: 0.8rem;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: rgba(0, 234, 255, 0.08);
+  color: #7cecff;
+  border: 1px solid rgba(0, 234, 255, 0.4);
+}
+
+/* Hover */
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.65);
+  border-color: rgba(0, 234, 255, 0.6);
+}
+
+/* Responsive Portfolio */
+
+@media (max-width: 992px) {
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* ============================
+   CONTACT SECTION
+============================ */
+
+.contact {
+  padding: 60px 10% 90px;
+  background-color: #15172b;
+  display: flex;
+  gap: 60px;
+  align-items: flex-start;
+}
+
+.contact-left,
+.contact-right {
+  flex: 1;
+}
+
+.contact-left h2 {
+  font-size: 2.4rem;
+  margin-bottom: 18px;
+}
+
+.contact-left p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #fff;
+  margin-bottom: 10px;
+  max-width: 520px;
+}
+
+.contact-info {
+  margin-top: 18px;
+}
+
+.contact-info p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+  font-size: 0.95rem;
+  margin-bottom: 6px;
+}
+
+.contact-info i {
+  color: aqua;
+}
+
+/* Formulario */
+
+.contact-form {
+  background: #191c32;
+  border-radius: 14px;
+  padding: 22px 24px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.5);
+  border: 1px solid rgba(255,255,255,0.03);
+  color: #ffffff;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 14px;
+}
+
+.form-group label {
+  font-size: 0.9rem;
+  margin-bottom: 6px;
+}
+
+.form-group input,
+.form-group textarea {
+  background: #15172b;
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.08);
+  padding: 10px 12px;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color .25s ease, box-shadow .25s ease;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #777e9a;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: rgba(0,234,255,0.8);
+  box-shadow: 0 0 0 1px rgba(0,234,255,0.4);
+}
+
+/* Botón de enviar, basado en tu estilo de download-cv */
+
+.contact-btn {
+  margin-top: 8px;
+  padding: 12px 32px;
+  background: linear-gradient(90deg, #00eaff, #00c6ff);
+  color: #191c32;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  box-shadow: 0 4px 20px rgba(0, 255, 255, 0.4);
+  transition: 0.3s ease;
+}
+
+.contact-btn:hover {
+  background-color: #fff;
+  color: #191c32;
+  box-shadow: 0 4px 24px rgba(255, 255, 255, 0.45);
+  transform: translateY(-2px);
+}
+
+/* Responsive Contact */
+
+@media (max-width: 992px) {
+  .contact {
+    flex-direction: column;
+  }
+}
+
+
+
+/* ============================
+   FOOTER
+============================ */
+
+.footer {
+  padding: 20px 10%;
+  background-color: #111322;
+  border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  font-size: 0.9rem;
+  color: #b8b8c8;
+}
+
+.footer-links {
+  display: flex;
+  gap: 16px;
+}
+
+.footer-links a {
+  color: #7cecff;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+/* footer responsive */
+@media (max-width: 600px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/*Esto le da un efecto “entra flotando” cuando cargas la página*/
+
+/* Animación de entrada para el hero */
+.info-content,
+.profile-picture {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp .8s ease forwards;
+}
+
+.profile-picture {
+  animation-delay: .2s;  /* la foto entra un poco después */
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/*Estilos del icono hamburguesa*/
+.hamburger {
+  display: none; /* Oculto en desktop */
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
+  z-index: 200;
+}
+
+.hamburger span {
+  width: 28px;
+  height: 3px;
+  background: #fff;
+  border-radius: 4px;
+  transition: transform 0.3s; opacity: 0.3s;
+}
+
+/*Animacion cuando el menu esta activo*/
+
+/* Línea superior → se convierte en una diagonal (\) */
+.hamburger.active span:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+
+/* Línea del medio → desaparece */
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+/* Línea inferior → se convierte en diagonal (/) */
+.hamburger.active span:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
+}
+
+/*Estilos del menú en móvil (oculto por defecto)*/
+
+@media (max-width: 768px) {
+
+  .menu {
+    position: absolute;
+    top: 80px;              /* debajo del navbar */
+    right: 0;
+    background: #121420;
+    width: 100%;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0;
+    align-items: center;
+    display: none;          /* 🔥 oculto inicialmente */
+  }
+
+  /* Cuando el menú esté activo */
+  .menu.active {
+    display: flex;         /* 🔥 se despliega */
+  }
+
+  .hamburger {
+    display: flex;         /* 🔥 se muestra solo en móvil */
+  }
+
+  /* Para esconder el menú normal en móvil */
+  .navbar {
+    position: relative;
+  }
+}
+
+.nav-cta {
+  padding: 8px 18px;
+  border-radius: 999px;
+  border: 1px solid rgba(0,234,255,0.6);
+  background: transparent;
+}
+
+.nav-cta:hover {
+  background: rgba(0,234,255,0.12);
+}
+
+
+.lang-switch {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.lang-btn {
+  background: transparent;
+  border: 1px solid transparent;
+  color: #fff;
+  font-size: 0.8rem;
+  padding: 4px 8px;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.lang-btn.active-lang {
+  border-color: #00eaff;
+  background: rgba(0, 234, 255, 0.15);
+}

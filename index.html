@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fabian Mera - Portafolio</title>
+
+  <!-- Ruta correcta SIN carpeta css -->
+  <link rel="stylesheet" href="./styles.css">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+</head>
+<body>
+
+<div class="wrapper">
+  <header>
+    <nav class="navbar">
+      <div class="brand">
+        <h2>W<span>F</span>M</h2>
+      </div>
+        <ul class="menu">
+        <li><a href="#home" class="active" id="nav-home">Home</a></li>
+        <li><a href="#about" id="nav-about">About me</a></li>
+        <li><a href="#portfolio" id="nav-portfolio">Portfolio</a></li>
+        <li><a href="#contact" class="nav-cta" id="nav-contact">Contact</a></li>
+
+        <li class="lang-switch">
+        <button class="lang-btn active-lang" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="es">ES</button>
+        </li>
+      </ul>
+
+      <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+      </div>
+    </nav>  
+  </header>
+  <section id="home" class="main"> 
+  <div class="info-content">
+    <h1 id="hero-title">I'm <span>Fabian </span>Mera</h1>
+
+      <p id="hero-text">
+        I am a Workforce Specialist with experience in data analysis, KPI tracking, scheduling, and developing strategic reports that support decision-making. I focus on optimizing operational efficiency and ensuring service levels are consistently met.
+        I work with tools such as Advanced Excel, Tableau, and Power BI, where I’m actively learning DAX to enhance data modeling and reporting. I am also using and learning Python for automation and process optimization, working with libraries such as pandas, numpy, openpyxl, Tkinter and win32com. I’m known for my analytical mindset, attention to detail, and continuous-learning approach.
+      </p>
+      <a download href="./CV/Leiner-Fabian-Mera-Zuluaga-CV.pdf">
+        <button class="download-cv">Download CV</button> 
+      </a>  
+    </div>
+    <img class="profile-picture" src="./Imagenes/Image (3).jpg" alt="Fabian Mera picture">
+  </section>
+    <section class="about" id="about">
+  <div class="about-left">
+      <h2 id="about-title">About <span>me</span></h2>
+       <p id="about-p1">
+        I am a Workforce Specialist focused on data-driven decision making and operational efficiency.
+        I have experience in WFM, KPI tracking, scheduling, forecasting, and building dashboards that 
+        help leaders understand performance in a clear and actionable way.
+      </p>
+      <p id="about-p2">
+        I enjoy designing solutions that combine analytics and automation, always looking for ways to 
+        optimize processes, improve customer experience, and support business growth.
+      </p>
+    </div>
+
+    <div class="about-right">
+      <h3>Core skills</h3>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h4>Data & Reporting</h4>
+          <p>Advanced Excel, Power BI, Tableau, DAX, data modeling and KPI visualization.</p>
+        </div>
+        <div class="skill-card">
+          <h4>Workforce Management</h4>
+          <p>Scheduling, forecasting, service levels, productivity and performance analysis.</p>
+        </div>
+          <div class="skill-card">
+            <h4>Python & Automation</h4>
+            <p>pandas, numpy, openpyxl, Tkinter, win32com for automating reports and processes.</p>
+          </div>
+        <div class="skill-card">
+          <h4>Professional Profile</h4>
+          <p>Analytical mindset, attention to detail, ownership and continuous learning.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <section class="portfolio" id="portfolio">
+    <div class="portfolio-header">
+      <h2 id="portfolio-title">Portfolio</h2>
+      <p id="portfolio-subtitle">
+        Some of the projects I’ve worked on related to analytics, automation and workforce management.
+      </p>
+    </div>
+
+    <div class="portfolio-grid">
+      <article class="project-card">
+        <a class="card-link" href="https://github.com/LFabianMera?tab=repositories" target="_blank" rel="noopener noreferrer" aria-label="Open Python KPI Automation GitHub repos in a new tab" style="display:block; text-decoration:none; color:inherit;">
+          <h3>Python – KPI Automation</h3>
+          <p>
+            Script in Python to automate Excel KPI reports using pandas, openpyxl and win32com, 
+            integrating multiple CSV(or others) sources. into a single dataset that after will be used to create a dashboard (Some examples of what I can do on my GitHub, just click above the card).
+          </p>
+          <span class="project-tag">Python · Excel · Automation</span>
+        </a>
+      </article>
+
+        <article class="project-card">
+          <a class="card-link" href="https://public.tableau.com/app/profile/fabian.mera/viz/Ligas-AlgunasMetricas/Jugadoresdestacadosmetricas2" target="_blank" rel="noopener noreferrer" aria-label="Open Tableau Public vizzes in a new tab" style="display:block; text-decoration:none; color:inherit;">
+            <h3>Power BI/Tableau – WFM Dashboard</h3>
+            <p>
+              Interactive dashboard for tracking service levels, adherence, productivity and shrinkage 
+              for call center operations, using DAX measures and dynamic filters (Examples on Tableau Public).
+            </p>
+            <span class="project-tag">Power BI · DAX · WFM</span>
+          </a>
+        </article>
+
+      <article class="project-card">
+          <a class="card-link" href="https://github.com/LFabianMera/Forecasting---Call-center" target="_blank" rel="noopener noreferrer" aria-label="Open Scheduling & Forecasting GitHub repo in a new tab" style="display:block; text-decoration:none; color:inherit;">
+            <h3>Scheduling & Forecasting</h3>
+            <p>
+              Workforce planning model to forecast demand, build optimized schedules and analyze coverage 
+              by interval, improving operational efficiency and staffing decisions.
+            </p>
+            <span class="project-tag">WFM · Forecast · Schedules</span>
+          </a>
+        </article>
+
+      <article class="project-card">
+        <h3>Additional Skills</h3>
+        <p>
+          * Testing, Evaluation, and Template Reports Design (MS excel).
+          * BPO Operations Knowledge.
+          * HR Processes and Policies.
+          * Metrics Calculation, Analysis, and Improvement Plans.
+          * Payroll and Attendance Management.
+        </p>
+        <span class="project-tag">HR · Staffing · Payroll</span>
+      </article>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="contact-left">
+      <h2 id="contact-title">Contact</h2>
+       <p id="contact-p1">
+        If you’d like to talk about opportunities, projects, or collaboration related to 
+        analytics, automation or workforce management, feel free to reach out.
+      </p>
+      <p id="contact-p2">
+        I’m open to discussing new ideas, process improvements, and data-driven solutions 
+        for operations.
+      </p>
+
+      <div class="contact-info">
+        <p><i class="fas fa-envelope"></i> fabiomera03@gmail.com</p>
+        <p><i class="fab fa-linkedin"></i> https://www.linkedin.com/in/fabian-mera-zuluaga03</p>
+      </div>
+    </div>
+
+    <div class="contact-right">
+      <form class="contact-form">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input id="name" type="text" placeholder="Your name">
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input id="email" type="email" placeholder="Your email..." required>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" rows="4" placeholder="Write your message here..."></textarea>
+        </div>
+
+        <button type="submit" class="contact-btn">Send message</button>
+      </form>
+    </div>
+  </section>
+    <footer class="footer">
+    <div class="footer-content">
+      <p>© 2025 Fabian Mera. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/fabian-mera-zuluaga03" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=fabiomera03@gmail.com" target="_blank" rel="noopener noreferrer">Email</a>
+      </div>
+    </div>
+  </footer>
+</div> <!-- cierre .wrapper -->
+
+
+
+
+<script>
+  // Hamburger menu
+  const hamburger = document.querySelector(".hamburger");
+  const menu = document.querySelector(".menu");
+
+  hamburger.addEventListener("click", () => {
+    menu.classList.toggle("active");
+    hamburger.classList.toggle("active");
+  });
+
+  // 🔥 AUTO-ACTIVAR MENÚ SEGÚN SCROLL
+  const sections = document.querySelectorAll("section");
+  const navLinks = document.querySelectorAll(".menu a");
+
+  window.addEventListener("scroll", () => {
+    let current = "";
+
+    sections.forEach(sec => {
+      const top = window.scrollY;
+      const offset = sec.offsetTop - 200;
+      const height = sec.offsetHeight;
+      const id = sec.getAttribute("id");
+
+      if (top >= offset && top < offset + height) {
+        current = id;
+      }
+    });
+
+    // Si no estamos dentro de ninguna sección, por defecto "home"
+    if (current === "") {
+      current = "home";
+    }
+
+    navLinks.forEach(link => {
+      link.classList.remove("active");
+      if (link.getAttribute("href") === `#${current}`) {
+        link.classList.add("active");
+      }
+    });
+  });
+
+    // =========================
+  // 🌐 TRADUCCIONES EN / ES
+  // =========================
+
+  const translations = {
+    en: {
+      navHome: "Home",
+      navAbout: "About me",
+      navPortfolio: "Portfolio",
+      navContact: "Contact",
+      heroTitle: `I'm <span>Fabian </span>Mera`,
+      heroText: `I am a Workforce Specialist with experience in data analysis, KPI tracking, scheduling, and developing strategic reports that support decision-making. I focus on optimizing operational efficiency and ensuring service levels are consistently met.<br><br>
+      I work with tools such as Advanced Excel, Tableau, and Power BI, where I’m actively learning DAX to enhance data modeling and reporting. I am also using and learning Python for automation and process optimization, working with libraries such as pandas, numpy, openpyxl, Tkinter and win32com. I’m known for my analytical mindset, attention to detail, and continuous-learning approach.`,
+      aboutTitle: `About <span>me</span>`,
+      aboutP1: `I am a Workforce Specialist focused on data-driven decision making and operational efficiency. I have experience in WFM, KPI tracking, scheduling, forecasting, and building dashboards that help leaders understand performance in a clear and actionable way.`,
+      aboutP2: `I enjoy designing solutions that combine analytics and automation, always looking for ways to optimize processes, improve customer experience, and support business growth.`,
+      skill1Title: "Data & Reporting",
+      skill1Desc: "Advanced Excel, Power BI, Tableau, DAX, data modeling and KPI visualization.",
+      skill2Title: "Workforce Management",
+      skill2Desc: "Scheduling, forecasting, service levels, productivity and performance analysis.",
+      skill3Title: "Python & Automation",
+      skill3Desc: "pandas, numpy, openpyxl, Tkinter, win32com for automating reports and processes.",
+      skill4Title: "Professional Profile",
+      skill4Desc: "Analytical mindset, attention to detail, ownership and continuous learning.",
+      portfolioTitle: "Portfolio",
+      portfolioSubtitle: "Some of the projects I’ve worked on related to analytics, automation and workforce management.",
+      proj1Title: "Python – KPI Automation",
+      proj1Desc: "Script in Python to automate Excel KPI reports using pandas, openpyxl and win32com, integrating multiple CSV(or others) sources. into a single dataset that after will be used to create a dashboard (Some examples of what I can do on my GitHub, just click above the card).",
+      proj1Tag: "Python · Excel · Automation",
+      proj2Title: "Power BI/Tableau – WFM Dashboard",
+      proj2Desc: "Interactive dashboard for tracking service levels, adherence, productivity and shrinkage for call center operations, using DAX measures and dynamic filters (Examples on Tableau Public).",
+      proj2Tag: "Power BI · DAX · WFM",
+      proj3Title: "Scheduling & Forecasting",
+      proj3Desc: "Workforce planning model to forecast demand, build optimized schedules and analyze coverage by interval, improving operational efficiency and staffing decisions.",
+      proj3Tag: "WFM · Forecast · Schedules",
+      proj4Title: "Additional Skills",
+      proj4Desc: "* Testing, Evaluation, and Template Reports Design (MS excel).\n* BPO Operations Knowledge.\n* HR Processes and Policies.\n* Metrics Calculation, Analysis, and Improvement Plans.\n* Payroll and Attendance Management.",
+      proj4Tag: "HR · Staffing · Payroll",
+      contactTitle: "Contact",
+      contactP1: `If you’d like to talk about opportunities, projects, or collaboration related to analytics, automation or workforce management, feel free to reach out.`,
+      contactP2: `I’m open to discussing new ideas, process improvements, and data-driven solutions for operations.`,
+      downloadCV: "Download CV",
+      contactBtn: "Send message",
+      formName: "Name",
+      formNamePH: "Your name",
+      formEmail: "Email",
+      formEmailPH: "fabiomera03@email.com",
+      formMsg: "Message",
+      formMsgPH: "Write your message here...",
+      footerText: "© 2025 Fabian Mera. All rights reserved.",
+      footerLinkedIn: "LinkedIn",
+      footerEmail: "Email"
+    },
+    es: {
+      navHome: "Inicio",
+      navAbout: "Sobre mí",
+      navPortfolio: "Portafolio",
+      navContact: "Contacto",
+      heroTitle: `Soy <span>Fabian </span>Mera`,
+      heroText: `Soy especialista en Workforce Management con experiencia en análisis de datos, seguimiento de KPIs, generación de horarios y desarrollo de reportes estratégicos para apoyar la toma de decisiones. Me enfoco en optimizar la eficiencia operativa y asegurar el cumplimiento de los niveles de servicio.<br><br>
+      Trabajo con herramientas como Excel avanzado, Tableau y Power BI, donde estoy aprendiendo DAX para mejorar el modelado y la visualización de datos. También utilizo y aprendo Python para automatizar procesos, usando librerías como pandas, numpy, openpyxl, Tkinter y win32com. Me caracterizo por mi mentalidad analítica, atención al detalle y enfoque de aprendizaje continuo.`,
+      aboutTitle: `Sobre <span>mí</span>`,
+      aboutP1: `Soy un profesional orientado a los datos y a la mejora continua de los procesos operativos. Tengo experiencia en WFM, seguimiento de KPIs, programación de turnos, pronósticos y construcción de dashboards para líderes de operación.`,
+      aboutP2: `Disfruto diseñar soluciones que combinan analítica y automatización, buscando siempre mejorar la experiencia del cliente y el desempeño del negocio.`,
+      skill1Title: "Datos y Reportes",
+      skill1Desc: "Excel avanzado, Power BI, Tableau, DAX, modelado de datos y visualización de KPIs.",
+      skill2Title: "Gestión de Workforce",
+      skill2Desc: "Programación de turnos, pronósticos, niveles de servicio, productividad y análisis de desempeño.",
+      skill3Title: "Python y Automatización",
+      skill3Desc: "pandas, numpy, openpyxl, Tkinter, win32com para automatizar reportes y procesos.",
+      skill4Title: "Perfil Profesional",
+      skill4Desc: "Mentalidad analítica, atención al detalle, sentido de responsabilidad y aprendizaje continuo.",
+      portfolioTitle: "Portafolio",
+      portfolioSubtitle: "Algunos de los proyectos en los que he trabajado relacionados con analítica, automatización y gestión de Workforce.",
+      proj1Title: "Python – Automatización de KPIs",
+      proj1Desc: "Script en Python para automatizar reportes de KPIs en Excel usando pandas, openpyxl y win32com, integrando múltiples fuentes CSV (u otras) en un solo dataset que luego se usa para crear dashboards (Ejemplos en mi GitHub, haz clic en la tarjeta).",
+      proj1Tag: "Python · Excel · Automatización",
+      proj2Title: "Power BI/Tableau – Dashboard WFM",
+      proj2Desc: "Dashboard interactivo para seguimiento de niveles de servicio, adherencia, productividad y shrinkage en operaciones de call center, usando medidas DAX y filtros dinámicos (Ejemplos en Tableau Public).",
+      proj2Tag: "Power BI · DAX · WFM",
+      proj3Title: "Programación y Forecasting",
+      proj3Desc: "Modelo de planeación de Workforce para pronosticar demanda, construir horarios optimizados y analizar cobertura por intervalo, mejorando eficiencia operativa y decisiones de personal.",
+      proj3Tag: "WFM · Forecast · Horarios",
+      proj4Title: "Habilidades Adicionales",
+      proj4Desc: "* Diseño de pruebas, evaluación y reportes plantilla (MS Excel).\n* Conocimiento de operaciones BPO.\n* Procesos y políticas de RRHH.\n* Cálculo de métricas, análisis y planes de mejora.\n* Gestión de nómina y asistencia.",
+      proj4Tag: "RRHH · Staffing · Nómina",
+      contactTitle: "Contacto",
+      contactP1: `Si quieres hablar sobre oportunidades, proyectos o colaboración en temas de analítica, automatización o Workforce Management, no dudes en escribirme.`,
+      contactP2: `Estoy abierto a discutir nuevas ideas, mejoras de procesos y soluciones basadas en datos para la operación.`,
+      downloadCV: "Descargar CV",
+      contactBtn: "Enviar mensaje",
+      formName: "Nombre",
+      formNamePH: "Tu nombre",
+      formEmail: "Correo electrónico",
+      formEmailPH: "fabiomera03@email.com",
+      formMsg: "Mensaje",
+      formMsgPH: "Escribe tu mensaje aquí...",
+      footerText: "© 2025 Fabian Mera. Todos los derechos reservados.",
+      footerLinkedIn: "LinkedIn",
+      footerEmail: "Correo"
+    }
+  };
+
+  const langButtons = document.querySelectorAll(".lang-btn");
+
+  function setLanguage(lang) {
+    // Navbar
+    document.getElementById("nav-home").textContent = translations[lang].navHome;
+    document.getElementById("nav-about").textContent = translations[lang].navAbout;
+    document.getElementById("nav-portfolio").textContent = translations[lang].navPortfolio;
+    document.getElementById("nav-contact").textContent = translations[lang].navContact;
+
+    // Hero
+    document.getElementById("hero-title").innerHTML = translations[lang].heroTitle;
+    document.getElementById("hero-text").innerHTML = translations[lang].heroText;
+    document.querySelector(".download-cv").textContent = translations[lang].downloadCV;
+
+    // About
+    document.getElementById("about-title").innerHTML = translations[lang].aboutTitle;
+    document.getElementById("about-p1").textContent = translations[lang].aboutP1;
+    document.getElementById("about-p2").textContent = translations[lang].aboutP2;
+    // Skill cards
+    document.querySelectorAll(".skill-card")[0].querySelector("h4").textContent = translations[lang].skill1Title;
+    document.querySelectorAll(".skill-card")[0].querySelector("p").textContent = translations[lang].skill1Desc;
+    document.querySelectorAll(".skill-card")[1].querySelector("h4").textContent = translations[lang].skill2Title;
+    document.querySelectorAll(".skill-card")[1].querySelector("p").textContent = translations[lang].skill2Desc;
+    document.querySelectorAll(".skill-card")[2].querySelector("h4").textContent = translations[lang].skill3Title;
+    document.querySelectorAll(".skill-card")[2].querySelector("p").textContent = translations[lang].skill3Desc;
+    document.querySelectorAll(".skill-card")[3].querySelector("h4").textContent = translations[lang].skill4Title;
+    document.querySelectorAll(".skill-card")[3].querySelector("p").textContent = translations[lang].skill4Desc;
+
+    // Portfolio
+    document.getElementById("portfolio-title").textContent = translations[lang].portfolioTitle;
+    document.getElementById("portfolio-subtitle").textContent = translations[lang].portfolioSubtitle;
+    // Project cards
+    document.querySelectorAll(".project-card")[0].querySelector("h3").textContent = translations[lang].proj1Title;
+    document.querySelectorAll(".project-card")[0].querySelector("p").textContent = translations[lang].proj1Desc;
+    document.querySelectorAll(".project-card")[0].querySelector(".project-tag").textContent = translations[lang].proj1Tag;
+    document.querySelectorAll(".project-card")[1].querySelector("h3").textContent = translations[lang].proj2Title;
+    document.querySelectorAll(".project-card")[1].querySelector("p").textContent = translations[lang].proj2Desc;
+    document.querySelectorAll(".project-card")[1].querySelector(".project-tag").textContent = translations[lang].proj2Tag;
+    document.querySelectorAll(".project-card")[2].querySelector("h3").textContent = translations[lang].proj3Title;
+    document.querySelectorAll(".project-card")[2].querySelector("p").textContent = translations[lang].proj3Desc;
+    document.querySelectorAll(".project-card")[2].querySelector(".project-tag").textContent = translations[lang].proj3Tag;
+    document.querySelectorAll(".project-card")[3].querySelector("h3").textContent = translations[lang].proj4Title;
+    document.querySelectorAll(".project-card")[3].querySelector("p").textContent = translations[lang].proj4Desc;
+    document.querySelectorAll(".project-card")[3].querySelector(".project-tag").textContent = translations[lang].proj4Tag;
+
+    // Contact
+    document.getElementById("contact-title").textContent = translations[lang].contactTitle;
+    document.getElementById("contact-p1").textContent = translations[lang].contactP1;
+    document.getElementById("contact-p2").textContent = translations[lang].contactP2;
+    document.querySelector(".contact-btn").textContent = translations[lang].contactBtn;
+    // Form labels and placeholders
+    document.querySelector("label[for='name']").textContent = translations[lang].formName;
+    document.getElementById("name").placeholder = translations[lang].formNamePH;
+    document.querySelector("label[for='email']").textContent = translations[lang].formEmail;
+    document.getElementById("email").placeholder = translations[lang].formEmailPH;
+    document.querySelector("label[for='message']").textContent = translations[lang].formMsg;
+    document.getElementById("message").placeholder = translations[lang].formMsgPH;
+
+    // Footer
+    document.querySelector(".footer-content p").textContent = translations[lang].footerText;
+    document.querySelectorAll(".footer-links a")[0].textContent = translations[lang].footerLinkedIn;
+    document.querySelectorAll(".footer-links a")[1].textContent = translations[lang].footerEmail;
+
+    // Cambiar estado visual del botón
+    langButtons.forEach(btn => btn.classList.remove("active-lang"));
+    document.querySelector(`.lang-btn[data-lang="${lang}"]`).classList.add("active-lang");
+  }
+
+  // Eventos para los botones EN / ES
+  langButtons.forEach(btn => {
+    btn.addEventListener("click", () => {
+      const lang = btn.getAttribute("data-lang");
+      setLanguage(lang);
+    });
+  });
+
+  // Idioma por defecto
+  setLanguage("en");
+
+  // =========================
+  // CONTACT FORM EMAILJS
+  // =========================
+  // EmailJS v4 integration (ES module)
+  // Place this block at the end of your <body> or inside a <script type="module"> tag
+  // If you use <script type="module">, remove other <script> tags for EmailJS
+  // --- BEGIN EMAILJS v4 ---
+
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+window.addEventListener('DOMContentLoaded', function() {
+  emailjs.init('CAHXO7yXUY48yMskk');
+  const contactForm = document.querySelector(".contact-form");
+  contactForm.addEventListener("submit", function(e) {
+    e.preventDefault();
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const message = document.getElementById("message").value;
+    const templateParams = {
+      from_name: name,
+      from_email: email,
+      message: message
+    };
+    emailjs.send('service_wwbfxft', 'template_5pzsqhu', templateParams)
+      .then(function(response) {
+        alert("Mensaje enviado correctamente. ¡Gracias por contactarme!");
+        contactForm.reset();
+      }, function(error) {
+        alert("Hubo un error al enviar el mensaje. Intenta nuevamente más tarde.");
+      });
+  });
+});
+</script>
+
+</body>
+</html>
